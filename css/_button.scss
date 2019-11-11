@@ -69,3 +69,10 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}

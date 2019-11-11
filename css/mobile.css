@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .button.bordered {
+    border: 1px solid;
+  }
+  header .main-content {
+    width: 100%;
+  }
+  header .main-content h1 {
+    font-size: 20px;
+  }
+  header .main-content p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  header .main-content .logo {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

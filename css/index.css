@@ -72,6 +72,13 @@
           box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 600px) {
+  .button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+
 p, h1, h2, h3, h4, span, b, strong, a {
   font-family: 'Muli', 'Arial';
 }
@@ -86,13 +93,9 @@ nav {
 }
 
 nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
   -webkit-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
-  background-color: white !important;
-}
-
-nav.scrolled a {
-  color: #363435 !important;
 }
 
 nav.scrolled a::after {
@@ -130,7 +133,7 @@ section {
 }
 
 section .section-title {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -201,6 +204,38 @@ section .section-title {
   display: none;
 }
 
+@media (max-width: 600px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  section .section-title {
+    border-bottom: 2px solid #0098db;
+    padding-bottom: 5px;
+  }
+  .navbar {
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+  }
+  .navbar .navbar-toggler {
+    color: white !important;
+    margin: 10px;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding-left: 15px !important;
+  }
+  .navbar.scrolled {
+    opacity: 1;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+  }
+  .navbar-collapse {
+    height: 100vh !important;
+  }
+}
+
 header {
   background-color: black;
   height: 100vh;
@@ -254,7 +289,7 @@ header .main-content .logo {
 
 #AboutUs .text-card {
   background-color: white;
-  padding: 20px 40px;
+  padding: 30px 40px;
   position: absolute;
   top: -150px;
   -webkit-box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
@@ -263,7 +298,8 @@ header .main-content .logo {
 }
 
 #AboutUs .button {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #Projects {
@@ -376,5 +412,56 @@ footer .subfooter a:hover {
   font-weight: bold;
   -webkit-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
+}
+
+@media (max-width: 600px) {
+  .button.bordered {
+    border: 1px solid;
+  }
+  header {
+    height: auto;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  header .main-content {
+    width: 100%;
+    padding-top: 50px;
+  }
+  header .main-content h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header .main-content p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  header .main-content .logo {
+    height: 50px;
+  }
+  #AboutUs .text-card {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0;
+    position: relative;
+    top: 0;
+    font-size: 13px;
+  }
+  #AboutUs .about-us-wrapper {
+    display: none;
+  }
+  #AboutUs .button {
+    margin-top: 20px;
+  }
+  #Projects .list-of-projects .grid-sizer,
+  #Projects .list-of-projects .each-project-container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #Projects .each-project .details {
+    width: 90%;
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=index.css.map */

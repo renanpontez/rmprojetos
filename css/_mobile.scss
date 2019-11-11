@@ -1,0 +1,76 @@
+//MOBILE
+@media (max-width: 600px) {
+  .button.bordered {
+     border: 1px solid;
+  }
+
+  header {
+    height: auto;
+    padding-bottom: 50px;
+    position: relative;
+
+    .main-content {
+      width: 100%;
+      padding-top: 50px;
+      
+      
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .logo {
+        height: 50px;
+      }
+    }
+
+  }
+
+  #AboutUs {
+    .text-card {
+      box-shadow: none !important;
+      background-color: transparent !important;
+      padding: 0;
+      position: relative;
+      top: 0;
+      font-size: 13px;
+    }
+
+    .about-us-wrapper {
+      display: none;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  #Projects {
+
+    .list-of-projects {
+      .grid-sizer,
+      .each-project-container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+
+    .each-project .details {
+      width: 90%;
+      text-align: right;
+    }
+  }
+  
+}
+
+
+//TABLET
+@media (min-width: 601px) and (max-width: 1279px) {
+  
+}

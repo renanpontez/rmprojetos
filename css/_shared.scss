@@ -15,11 +15,10 @@ nav {
   transition: all 300ms ease-in;
 
   &.scrolled {
+    background-color: rgba(0, 0, 0, .8) !important;
     transition: all 300ms ease-in;
-    background-color: white !important;
 
     a {
-      color: $darkColor !important;
       
       &::after {
         border-color: $primaryColor;
@@ -58,10 +57,11 @@ section {
   padding-bottom: 80px;
 
   .section-title {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
     margin-bottom:40px;
   }
+
 }
 
 
@@ -127,4 +127,42 @@ section {
 
 #mock {
   display: none;
+}
+
+
+
+@media (max-width: 600px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .section-title {
+      border-bottom: 2px solid $primaryColor;
+      padding-bottom: 5px;
+    }
+  }
+
+  .navbar {
+    padding: 0;
+    opacity: 0;
+    transition: all 300ms ease-out;
+
+    .navbar-toggler {
+      color: white !important;
+      margin: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      padding-left: 15px !important;
+    }
+
+    &.scrolled {
+      opacity: 1;
+      transition: all 300ms ease-out;
+    }
+  }
+
+  .navbar-collapse {
+    height: 100vh !important;
+  }
 }

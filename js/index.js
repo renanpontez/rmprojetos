@@ -62,10 +62,16 @@ $(document).ready(function() {
   
   $(window).scroll(function() {
     let scroll = $(window).scrollTop();
-    if(scroll >= window.innerHeight) 
+    if(scroll >= window.innerHeight - 300) {
       $('nav').addClass('scrolled');
-    else 
+    }
+    else {
       $('nav').removeClass('scrolled');
+
+      if($('nav').find('.collapse.show').length) {
+        $('.navbar-toggler').click();
+      }
+    }
   });
 
 
@@ -84,6 +90,10 @@ function scrollTo(e) {
   $([document.documentElement, document.body]).animate({
     scrollTop: $(href).offset().top - topMargin
   }, 800);
+
+  if($('nav').find('.collapse.show').length) {
+    $('.navbar-toggler').click();
+  }
 }
 
 function insertProjects(projects) {

@@ -53,16 +53,19 @@ header {
   position: relative;
   clear: both;
   min-height: 350px;
+
   .text-card {
     background-color: white;
-    padding: 20px 40px;
+    padding: 30px 40px;
     position: absolute;
     top: -150px;
     box-shadow: 1px 1px 22px rgba(0,0,0,.1);
     font-size: 18px;
   }
+
   .button {
-    margin-top: $marginMD;
+    margin-top: $marginSM;
+    margin-bottom: $marginSM;
   }
 }
 
@@ -176,5 +179,6 @@ footer {
       }
     }
   }
-
 }
+
+@import 'mobile';
