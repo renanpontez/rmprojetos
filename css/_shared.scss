@@ -1,0 +1,130 @@
+p, h1, h2, h3, h4, span, b, strong, a {
+  font-family: 'Muli', 'Arial';
+}
+
+h1 {
+  font-size: 35px;
+}
+
+
+$marginSM: 20px;
+$marginMD: 50px;
+$marginLG: 100px;
+
+nav {
+  transition: all 300ms ease-in;
+
+  &.scrolled {
+    transition: all 300ms ease-in;
+    background-color: white !important;
+
+    a {
+      color: $darkColor !important;
+      
+      &::after {
+        border-color: $primaryColor;
+      }
+    }
+  }
+}
+
+.navbar {
+  background-color: transparent !important;
+
+  a {
+    color: white !important;
+    font-size: 16px;
+    padding: 15px 30px !important;
+    text-transform: capitalize;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: white;
+      transition: width .5s;
+    }
+
+    &:hover::after {
+        width: 100%;
+        //transition: width .3s;
+    }
+  }
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:40px;
+  }
+}
+
+
+.each-project {
+  position: relative;
+  margin-top: 15px;
+
+  .img {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://www.simplesdecoracao.com.br/wp-content/uploads/2018/01/habitissimocuba-de-sobrepor-1529743.jpg");
+    height: 300px;
+    transition: all 200ms ease-out;
+    width: 100%;
+  }
+
+  .details {
+    background-color: white;
+    width: 70%;
+    position: relative;
+    top: -40px;
+    left: 20px;
+    right: 0;
+    box-shadow: 1px 1px 22px rgba(0,0,0,.1);
+
+    .content {
+      .title {
+        padding: 20px 20px 0 20px;
+        font-size: 22px;
+        font-weight: 500;
+        display: block;
+      }
+
+      .info {
+        text-transform: lowercase;
+        color: $darkColor;
+        opacity: .4;
+        padding: 0 20px 20px 20px;
+        display: block;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: $primaryColor;
+        transition: width .5s;
+      }
+    }
+  }
+ 
+  &:hover {
+    .img {
+      transform: scale(1.02);
+      transition: all 300ms ease-in;
+    }
+    .content::after {
+      width: 100%;
+      //transition: width .3s;
+    }
+  }
+}
+
+#mock {
+  display: none;
+}

@@ -1,0 +1,380 @@
+.button {
+  padding: 12px 22px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.button.bordered {
+  border: 2px solid white;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.button.bordered.primary {
+  border-color: #0098db !important;
+}
+
+.button.bordered:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button.bordered:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.button.bordered.dark {
+  color: #363435;
+  border-color: #363435;
+}
+
+.button.bordered.dark:hover {
+  border-color: #0098db;
+  color: #0098db;
+  -webkit-box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+}
+
+.button.full-width {
+  display: block;
+  width: 100%;
+}
+
+.button.sm {
+  font-size: 14px;
+  padding: 7px 13px;
+}
+
+.button.primary {
+  color: #0098db !important;
+  background-color: transparent;
+}
+
+.button.primary:hover {
+  background-color: #0098db;
+  color: white !important;
+}
+
+.button.primary:focus {
+  -webkit-box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+}
+
+p, h1, h2, h3, h4, span, b, strong, a {
+  font-family: 'Muli', 'Arial';
+}
+
+h1 {
+  font-size: 35px;
+}
+
+nav {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+nav.scrolled {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  background-color: white !important;
+}
+
+nav.scrolled a {
+  color: #363435 !important;
+}
+
+nav.scrolled a::after {
+  border-color: #0098db;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar a {
+  color: white !important;
+  font-size: 16px;
+  padding: 15px 30px !important;
+  text-transform: capitalize;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section .section-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.each-project {
+  position: relative;
+  margin-top: 15px;
+}
+
+.each-project .img {
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.simplesdecoracao.com.br/wp-content/uploads/2018/01/habitissimocuba-de-sobrepor-1529743.jpg");
+  height: 300px;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  width: 100%;
+}
+
+.each-project .details {
+  background-color: white;
+  width: 70%;
+  position: relative;
+  top: -40px;
+  left: 20px;
+  right: 0;
+  -webkit-box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+}
+
+.each-project .details .content .title {
+  padding: 20px 20px 0 20px;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+}
+
+.each-project .details .content .info {
+  text-transform: lowercase;
+  color: #363435;
+  opacity: .4;
+  padding: 0 20px 20px 20px;
+  display: block;
+}
+
+.each-project .details .content::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #0098db;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.each-project:hover .img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.each-project:hover .content::after {
+  width: 100%;
+}
+
+#mock {
+  display: none;
+}
+
+header {
+  background-color: black;
+  height: 100vh;
+}
+
+header:before {
+  content: '';
+  background-image: url("https://themegoods-cdn-pzbycso8wng.stackpathdns.com/architecturer/demo/wp-content/uploads/2018/08/PettitSevitt_MkV_Ext_Entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+header .container {
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+header .main-content {
+  padding-top: 100px;
+  color: white;
+  width: 500px;
+}
+
+header .main-content p {
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+header .main-content .button {
+  margin-top: 20px;
+}
+
+header .main-content .logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#AboutUs {
+  position: relative;
+  clear: both;
+  min-height: 350px;
+}
+
+#AboutUs .text-card {
+  background-color: white;
+  padding: 20px 40px;
+  position: absolute;
+  top: -150px;
+  -webkit-box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+#AboutUs .button {
+  margin-top: 50px;
+}
+
+#Projects {
+  background-color: #f7f7f7;
+}
+
+#Projects .list-of-projects .grid-sizer,
+#Projects .list-of-projects .each-project-container {
+  width: 50%;
+  padding-left: 00px;
+  padding-right: 60px;
+}
+
+#Schedule {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+#Schedule form input {
+  height: 45px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.02);
+  height: 60px;
+  color: white;
+}
+
+#Schedule form input:focus {
+  border-color: #363435 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#Schedule form .button {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: 1f1f1f;
+  color: white;
+  padding: 60px 30px;
+}
+
+footer .small-description img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+footer .small-description p {
+  font-size: 12px;
+}
+
+footer .small-description a {
+  font-size: 12px;
+  color: white;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+footer .small-description a:hover {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  font-weight: 700;
+}
+
+footer .small-nav h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .small-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+footer .small-nav ul li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 0;
+  padding-left: 0;
+  color: white;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+footer .small-nav ul li a:hover {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  font-weight: 700;
+}
+
+footer .subfooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+footer .subfooter a {
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  color: rgba(27, 27, 27, 0.3);
+}
+
+footer .subfooter a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+/*# sourceMappingURL=index.css.map */
